@@ -14,6 +14,7 @@
 		250A95BA26587BE85DB0A353 /* ofxCvColorImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE9C7160245B19131DAE6128 /* ofxCvColorImage.cpp */; };
 		3E1727309E7FA8856B845B44 /* ofxARDroneSimulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9548B110956F17FCF5905063 /* ofxARDroneSimulator.cpp */; };
 		467423AC9333FD27AC7D2722 /* ofxARDroneController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35D9D68502C62483ACF1594D /* ofxARDroneController.cpp */; };
+		53654569188DCDC100DBCB67 /* macGlutFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 53654568188DCDC100DBCB67 /* macGlutFix.m */; };
 		63020F16C7E8DED980111241 /* ofxCvImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6151136D101F857DAE12722 /* ofxCvImage.cpp */; };
 		66CA411C5A9664E27326BF36 /* ofxTCPServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C085E327DAB912CFA2A443D /* ofxTCPServer.cpp */; };
 		6A81FD0F1A12ABDEEA85A16F /* ofxARDroneCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28CD6F67000CD8D5DB4BB86E /* ofxARDroneCommand.cpp */; };
@@ -110,6 +111,8 @@
 		49EFFCF36CF194CCE0E1FAAB /* kdtree_index.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = kdtree_index.h; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/kdtree_index.h; sourceTree = SOURCE_ROOT; };
 		4C271CCF5B5A84BE8A031469 /* ofxARDroneController.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxARDroneController.h; path = "../../../addons/ofxARDrone-master/src/ofxARDroneController.h"; sourceTree = SOURCE_ROOT; };
 		516717F84C0146512C47A3EC /* ofxCvHaarFinder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxCvHaarFinder.h; path = ../../../addons/ofxOpenCv/src/ofxCvHaarFinder.h; sourceTree = SOURCE_ROOT; };
+		53654567188DCD7900DBCB67 /* macGlutFix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = macGlutFix.h; sourceTree = "<group>"; };
+		53654568188DCDC100DBCB67 /* macGlutFix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = macGlutFix.m; sourceTree = "<group>"; };
 		586A8EC141BDFA82B3B0518C /* config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = config.h; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/config.h; sourceTree = SOURCE_ROOT; };
 		59626D03C690200AD4E8B3A6 /* ml.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ml.hpp; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ml/ml.hpp; sourceTree = SOURCE_ROOT; };
 		5A59183C98FC5E69FC90F138 /* contrib.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = contrib.hpp; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv2/contrib/contrib.hpp; sourceTree = SOURCE_ROOT; };
@@ -640,6 +643,8 @@
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* testApp.h */,
+				53654567188DCD7900DBCB67 /* macGlutFix.h */,
+				53654568188DCDC100DBCB67 /* macGlutFix.m */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -769,6 +774,7 @@
 				3E1727309E7FA8856B845B44 /* ofxARDroneSimulator.cpp in Sources */,
 				B12936CE867B871466E92C87 /* ofxARDroneState.cpp in Sources */,
 				9CAF131D537840BF1F072BA0 /* ofxPhysicalNode.cpp in Sources */,
+				53654569188DCDC100DBCB67 /* macGlutFix.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

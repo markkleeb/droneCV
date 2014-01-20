@@ -31,6 +31,12 @@ public:
     bool typed;
     
     
+    //ScreenGrab Stuff
+    int captureWidth, captureHeight;
+    
+    ofImage image;
+    ofxCvHaarFinder finder;
+    
     //OpenCV Stuff
     
     ofxCvColorImage colorImg;
