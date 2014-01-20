@@ -24,6 +24,7 @@ void testApp::setup(){
     //drone.controller.commandHistory.setMaxLength(30);
     //drone.dataReceiver.commandHistory.setMaxLength(30);}
     
+     /*
     //-----------------------------
     //TCP stuff
     //have we typed?
@@ -46,7 +47,7 @@ void testApp::setup(){
 	deltaTime = 0;
     
 	tcpClient.setVerbose(true);
-    
+    */
     //ScreenGrab--------------------------------
     captureWidth = ofGetWidth();
     captureHeight = ofGetHeight();
@@ -93,7 +94,7 @@ void testApp::update(){
     // update the drone (process and send queued commands to drone, receive commands from drone and update state
     drone.update();
     
-    
+    /*
     
     
     //TCP STUFF--------------------------------------------
@@ -122,7 +123,7 @@ void testApp::update(){
         
         colorImg.setFromPixels( &buffer[0], 50, 52); //,OF_IMAGE_COLOR);
     }
-    
+    */
     
     /*
      //we are connected - lets send our text and check what we get back
@@ -150,8 +151,8 @@ void testApp::update(){
      
      }
      
-     
      */
+     
     
     //ScreenGrabStuff-----------------------------------------
     captureWidth = ofGetWidth();
@@ -195,7 +196,7 @@ void testApp::draw(){
     ofEnableAlphaBlending();
     glEnable(GL_DEPTH_TEST);
     
-    colorImg.draw(100, 100);
+    //colorImg.draw(100, 100);
     
     
     
@@ -236,21 +237,21 @@ void testApp::draw(){
     stateString += "battery level: "+ ofToString(state.getBatteryPercentage())+"%\n";
     stateString += "vx: "+ ofToString(state.getVx())+" vy: "+ ofToString(state.getVy())+" vz: "+ ofToString(state.getVz())+"\n";
     
-    
+    /*
     //TCP String
     string TCPstring = "";
     TCPstring += "TCP Status\n";
     TCPstring += "Connected : " + ofToString(weConnected) + "\n";
     TCPstring += "Sending : " + msgTx + "\n";
     TCPstring += "From Server : " + msgRx + "\n";
-    
+    */
     
     
     if(debug == true){
         ofSetColor(0, 200, 0);
         ofDrawBitmapString(controllerString, 10, 30);
         ofDrawBitmapString(stateString, ofGetWidth()-300, 30);
-        ofDrawBitmapString(TCPstring, 10, 400);
+       // ofDrawBitmapString(TCPstring, 10, 400);
         
         ofDrawBitmapString(drone.controller.commandHistory.getAsString(), 10, 280);
         ofDrawBitmapString(drone.dataReceiver.commandHistory.getAsString("\n"), ofGetWidth()-300, 280);
@@ -259,6 +260,8 @@ void testApp::draw(){
         
         
     }
+    
+    
     
     //ScreenGrabStuff-------------------------------------------
     image.draw(0,0, ofGetWidth(), ofGetHeight());
@@ -270,6 +273,7 @@ void testApp::draw(){
     for(int i = 0; i < finder.blobs.size(); i++) {
         ofRect(finder.blobs[i].boundingRect);
     }
+    
     
 }
 
